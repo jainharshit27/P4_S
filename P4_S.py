@@ -26,7 +26,7 @@ while True:
                 bullet_state = "fire"
     
     if bullet_state == "fire":
-        bullet.y = bullet.y - 1
+        bullet.y = bullet.y - 5
      
     if bullet.y < 0:
         bullet.y = 500
@@ -49,3 +49,4 @@ while True:
         sys.exit()
     
     pygame.display.update()
+    pygame.time.delay(10)
